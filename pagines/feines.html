@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOSTRA DE TREBALLS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Noto+Serif|Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+     <link rel="icon" href="../imatges/jobs-32x32.png" type="imatge/png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="contenidor-general"> 
+    <div id="contenidor-xxss"><i class="fab fa-twitter-square"></i><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fas fa-envelope"></i></div>
+    <div class="contenidor-text"><h1>Mostra de treballs</h1></div>
+    <div class="contenidor-flex">  
+  <a href="/index.html" class="btnmenu item">INICI</a>
+<a href="/pagines/slide.html" class="btnmenu item">CURRÍCULUM</a>
+   <a href="/pagines/feines.html" class="btnmenu item">MOSTRA DE TREBALLS</a>
+    <a href="/pagines/videos.html" class="btnmenu item">VIDEOS</a>
+    </div>
+     <div class="contenidor-imatges">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="/imatges/Rigging_Cyclop.jpg" style="width:100%">
+  <div class="text">Rigging i animació de personatges: Rig d'un biped</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="/imatges/Cotxe.jpg" style="width:100%">
+  <div class="text">Rigging i animació de personatges: Rig d'un cotxe</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="/imatges/Bici.jpg" style="width:100%">
+  <div class="text">Modelatge: Modelat de una bicicleta</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="/imatges/Shotgun.jpeg" style="width:100%">
+  <div class="text">Modelatge: Modelat d'una arma per a un shooter en 1ª persona</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="/imatges/CocaCola.jpg" style="width:100%">
+  <div class="text">Mapejat i texturització 3D: CocaCola</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="/imatges/Casa.jpg" style="width:100%">
+  <div class="text">Mapejat i texturització 3D: Casa</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="/imatges/Pop%20-%20copia.jpg" style="width:100%">
+  <div class="text">Principis de disseny i dibuix: Disseny de personatge</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="/imatges/Ziggs.jpg" style="width:100%">
+  <div class="text">Principis de disseny i dibuix: Disseny de personatge 2</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="/imatges/imatge_ombres_oclusives_final.jpg" style="width:100%">
+  <div class="text">Il·luminació: Ombres oclusives i profunditat de camp</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="/imatges/llum_silueta.jpeg" style="width:100%">
+  <div class="text">Il·luminació: Llums virtuals, silueta(silhouette lighting)</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span>
+       <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+           <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+      
+     </div>
+     <div class="contenidor-text2">Aquesta és una mostra de les meves feines més representatives durant el Cicle Formatiu d'Animacions 3D, Jocs i Entorns Interactius. També em podeu seguir a través de les meves xarxes socials Intagram i Facebook"</div>
+          <br>
+          <br>
+           <div id="footer">Miquel Angel Gonzalez Espelt · Tlf: 660 294 881 · miquel.canvillaura@gmail.com</div>
+     
+    </div>
+    
+</body>
+</html>
